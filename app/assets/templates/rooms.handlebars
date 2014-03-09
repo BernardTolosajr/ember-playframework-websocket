@@ -1,0 +1,17 @@
+<h2 class='header-page'>Rooms </h2>
+<div class='row'>
+	<div class="col-md-2">
+		<div class="list-group">
+			{{#each room in model}}
+					{{#link-to 'rooms.chat' room class='list-group-item'}} 
+						{{room.name}} 
+					{{/link-to}}
+			{{/each}}
+			</div>
+	</div>
+
+	<div class ='col-md-8'>
+		{{outlet}}
+	</div>
+
+</div>

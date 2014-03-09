@@ -1,0 +1,7 @@
+	<form role="form">
+		<div class="form-group">
+			<label for="message">Message</label>
+			{{textarea rows="3" value=user.message class="form-control" placeholder="Enter message"}}
+		</div>
+		<button type='button' {{action 'talk'}} class="btn">Talk</button>
+	</form>

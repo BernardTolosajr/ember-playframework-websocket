@@ -1,0 +1,24 @@
+
+<div>
+
+<h3 class="page-header"> {{name}} </h3>
+
+{{#unless isAlreadyJoin}}
+	{{chat-login user=model}}
+{{/unless}}
+
+{{#if isAlreadyJoin}}
+
+<div class="row">
+		<div class="col-md-8">
+			{{chat-messages messages=messages}}
+		</div>
+		<div class="col-md-2">
+			{{chat-members members=members}}
+		</div>
+</div>
+
+</div>
+	{{chat-form user=model}}
+{{/if}}
+
