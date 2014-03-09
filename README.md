@@ -1,4 +1,4 @@
-ember-playframework-websocket
+EmberJS + PlayFramework + Websocket
 =============================
 
-A simple chat using Ember.js + Playframework + WebSocket + Akka
+A simple chat using EmberJS + Playframework + WebSocket + Akka
